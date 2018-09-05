@@ -4,7 +4,7 @@ Adapted from the Reproducible Science Curriculum
 
 
 
-_Special Thanks: Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan, 
+_Special Thanks: Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan,
 and everyone else who contributed to these materials._
 
 _NEON has adapted them to our week long Data Institute._
@@ -111,7 +111,7 @@ Reproducibility spectrum for published research. Source: Peng, RD Reproducible R
 
 <div class="column column2">
 
-Figure 1. Distribution of reporting errors per paper. Papers from which data were shared has fewer errors. 
+Figure 1. Distribution of reporting errors per paper. Papers from which data were shared has fewer errors.
 
 <small>Click on citation to view paper.</small>
 
@@ -198,7 +198,7 @@ File / Folder Names should be:
 
 ##
 <a href="http://reproducible-science-curriculum.github.io/2015-09-24-reproducible-science-duml/naming-slides/assets/player/KeynoteDHTMLPlayer.html" target="_blank">More on file naming & organization</a>
- 
+
 -- from the Reproducible Science Curriculum
 
 ## 1. Organization - Benefits
@@ -321,7 +321,7 @@ Example Workflow / Tools:
 
 
 
-_An overview of some of the topics, tools and skills that we will cover during 
+_An overview of some of the topics, tools and skills that we will cover during
 the Data Institute_
 
 
@@ -340,5 +340,4 @@ the Data Institute_
 
 
 
-Email: neondataskills@BattelleEcology.org
-
+Email: katharyn.duffy@nau.edu
