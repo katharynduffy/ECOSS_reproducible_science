@@ -4,10 +4,9 @@ Adapted from the Reproducible Science Curriculum
 
 
 
-_Special Thanks: Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan,
+_Special Thanks: Naupaka Zimmerman,Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan,
 and everyone else who contributed to these materials._
 
-_NEON has adapted them to our week long Data Institute._
 
 
 
@@ -305,7 +304,7 @@ Example Workflow / Tools:
 
 
 
-* Document workflow: **R Markdown / Jupyter Notebooks**
+* Document workflow: **R Markdown / Matlab**
 
 * Collaborate with Colleagues / Version Control : **GitHub**
 
