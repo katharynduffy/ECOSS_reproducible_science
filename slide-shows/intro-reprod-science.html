@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>intro-reprod-science</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/NEON-reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="intro-to-reproducible-science" class="level2">
+<h2>Intro to Reproducible Science</h2>
+<p>Adapted from the Reproducible Science Curriculum</p>
+<p><em>Special Thanks: Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan, and everyone else who contributed to these materials.</em></p>
+<p><em>NEON has adapted them to our week long Data Institute.</em></p>
+</section>
+<section id="section" class="level2">
+<h2></h2>
+<blockquote>
+<p>Reproducibilty is actually all about being as lazy as possible!</p>
+</blockquote>
+<p>– Hadley Wickham (via <a href="https://twitter.com/hadleywickham/status/598532170160873472">Twitter</a>, 2015-05-03)</p>
+<section>
+<aside class="notes">
+:)
+</aside>
+</section>
+</section>
+<section id="why-use-reproducible-methods" class="level2">
+<h2>Why Use Reproducible Methods?</h2>
+<blockquote>
+<p>More efficient, less redundant science: others can build upon our work.</p>
+</blockquote>
+</section>
+<section id="reproducibility-your-research" class="level2">
+<h2>Reproducibility &amp; Your research</h2>
+<p><img src="images/intro-rr/Good-better-best_RepSciCur_PengScience.jpg" /></p>
+<p>Reproducibility spectrum for published research. Source: Peng, RD Reproducible Research in Computational Science Science (2011): 1226–1227 via Reproducible Science Curriculum</p>
+</section>
+<section id="section-1" class="level2">
+<h2></h2>
+<blockquote>
+<p><a href="http://www.genomebiology.com/2015/16/1/274">Five selfish reasons to work reproducibly</a> - Florian Markowetz</p>
+</blockquote>
+<ol type="1">
+<li><p>Reproducibility helps to avoid disaster</p></li>
+<li><p>Reproducibility makes it easier to write papers</p></li>
+<li><p>Reproducibility helps reviewers see it your way</p></li>
+<li><p>Reproducibility enables continuity of your work</p></li>
+<li><p>Reproducibility helps to build your reputation</p></li>
+</ol>
+</section>
+<section id="how-to-make-work-reproducible" class="level2">
+<h2>How to Make Work Reproducible</h2>
+<blockquote>
+<p>For research to be reproducible, the research products (data, code) need to be publicly available in a form that people can find and understand them.</p>
+</blockquote>
+</section>
+<section id="who-do-we-need-to-share-with" class="level2">
+<h2>Who do we need to share with?</h2>
+<ul>
+<li><p>Collaborators</p></li>
+<li><p>Peer reviewers &amp; journal editors</p></li>
+<li><p>Broad scientific community</p></li>
+<li><p>The public</p></li>
+</ul>
+</section>
+<section id="better-research" class="level2">
+<h2>Better Research</h2>
+<div class="column column1">
+<p><img src="http://journals.plos.org/plosone/article/figure/image?size=large&amp;id=info:doi/10.1371/journal.pone.0026828.g001" /></p>
+</div>
+<div class="column column2">
+<p>Figure 1. Distribution of reporting errors per paper. Papers from which data were shared has fewer errors.</p>
+<p><small>Click on citation to view paper.</small></p>
+<p><small><a href="http://dx.doi.org/10.1371/journal.pone.0026828" target="_blank">Wicherts et al (2011) Willingness to Share Research Data Is Related to the Strength of the Evidence and the Quality of Reporting of Statistical Results.</a></small></p>
+</div>
+</section>
+<section id="the-tools-that-make-this-easier" class="level2">
+<h2>The tools that make this easier</h2>
+<ul>
+<li><p>GitHub: Version Control / Collaboration / Dissemination</p></li>
+<li><p>R Markdown or Jupyter Notebooks: Code Documentation / Dissemination</p></li>
+</ul>
+</section>
+<section id="four-facets-of-reproducibility" class="level2">
+<h2>Four Facets of Reproducibility</h2>
+<p><em>Over the next week, we will focus on the tools and skills associated with these facets.</em></p>
+<ol type="1">
+<li>Organization</li>
+<li>Automation</li>
+<li>Documentation</li>
+<li>Dissemination</li>
+</ol>
+</section>
+<section id="organization" class="level2">
+<h2>1. Organization</h2>
+<p>The more self explanatory the better:</p>
+<ul>
+<li>Consider overall structure of folders and files</li>
+<li>Use informative file names</li>
+</ul>
+</section>
+<section id="organization-pro-tip" class="level2">
+<h2>1. Organization Pro-Tip</h2>
+<blockquote>
+<p>A variable name that describes the object is more useful than a random variable name.</p>
+</blockquote>
+</section>
+<section id="section-2" class="level2">
+<h2></h2>
+<p><img src="images/intro-rr/basmati-rice.png" /></p>
+</section>
+<section id="section-3" class="level2">
+<h2></h2>
+<div style="width:85%">
+<p><img src="http://journals.plos.org/ploscompbiol/article/figure/image?size=large&amp;id=info:doi/10.1371/journal.pcbi.1000424.g001" /></p>
+</div>
+<p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424" target="_blank"> Noble, William Stafford, 2009. A quick guide to organizing computational biology projects. </a></p>
+</section>
+<section id="organization-1" class="level2">
+<h2>1. Organization</h2>
+<p>File Organization should:</p>
+<ul>
+<li>Reflect inputs, outputs and information flow</li>
+<li>Preserve raw data so it’s not modified</li>
+<li>Carefully document &amp; store intermediate &amp; end outputs</li>
+<li>Carefully document &amp; store data processing scripts</li>
+</ul>
+</section>
+<section id="organization-2" class="level2">
+<h2>Organization</h2>
+<p><img src="images/intro-rr/fileOrganization.png" /></p>
+</section>
+<section id="organization-file-names" class="level2">
+<h2>1. Organization – File Names</h2>
+<p>File / Folder Names should be:</p>
+<ul>
+<li>Machine readable</li>
+<li>Human readable</li>
+<li>Support sorting</li>
+</ul>
+</section>
+<section id="which-set-of-file-names-are-most-self-explanatory" class="level2">
+<h2>Which set of file names are most self-explanatory?</h2>
+<p><img src="images/intro-rr/human-readable-jenny.png" /></p>
+</section>
+<section id="section-4" class="level2">
+<h2></h2>
+<p><a href="http://reproducible-science-curriculum.github.io/2015-09-24-reproducible-science-duml/naming-slides/assets/player/KeynoteDHTMLPlayer.html" target="_blank">More on file naming &amp; organization</a></p>
+<p>– from the Reproducible Science Curriculum</p>
+</section>
+<section id="organization---benefits" class="level2">
+<h2>1. Organization - Benefits</h2>
+<ul>
+<li>Your future self will be able to quickly find files</li>
+<li>Colleagues will be able to more quickly understand your workflow</li>
+<li>Machine readable names can be quickly and easily sorted and parsed</li>
+</ul>
+</section>
+<section id="automation-pro-tip" class="level2">
+<h2>2. Automation Pro-Tip</h2>
+<p>Scripting vs. Point and click</p>
+<blockquote>
+<p>Script = more time spent up front, but will save time in the long run.</p>
+</blockquote>
+</section>
+<section id="automation-pro-tip-1" class="level2">
+<h2>2. Automation Pro-Tip</h2>
+<p>Time Savings:</p>
+<ul>
+<li>More efficient to modify and repeat an analysis down the road</li>
+<li>Easier for reviewers and colleagues to see even aspect of your methods</li>
+<li>Self documenting methods - your future self will forget small steps</li>
+</ul>
+</section>
+<section id="automation" class="level2">
+<h2>2. Automation</h2>
+<p>DRY – Don’t Repeat Yourself</p>
+<blockquote>
+<p>If your analysis is composed of scripts, with repeated code throughout, it will be more time consuming to maintain and update.</p>
+</blockquote>
+<p><a href="http://reproducible-science-curriculum.github.io/2015-09-24-reproducible-science-duml/slides/01-automation-slides.html#9" target="_blank">Reproducible Science Curriculum - Automation</a></p>
+</section>
+<section id="automation-tips" class="level2">
+<h2>Automation Tips</h2>
+<p>Modularity – use functions to write code in reusable chunks</p>
+<ul>
+<li>Variables created within a function are temporary</li>
+<li>Code with functions can be easier to read / cleaner</li>
+<li>Allows for better documentation</li>
+<li>Supports testing</li>
+<li>Allows for re-use of code on other data</li>
+</ul>
+</section>
+<section id="section-5" class="level2">
+<h2></h2>
+<p><img src="images/intro-rr/index.jpg" /></p>
+</section>
+<section id="documentation" class="level2">
+<h2>2. Documentation</h2>
+<p>Document all workflow steps:</p>
+<ul>
+<li>You can remind your future self of your workflow</li>
+<li>Others can see and understand your work</li>
+<li>Future “re-analysis” of your data is more efficient</li>
+</ul>
+</section>
+<section id="documentation-1" class="level2">
+<h2>Documentation</h2>
+<p>Code should be easy to understand with clear goals</p>
+<blockquote>
+<p>Document your code even if you think it’s clear and simple. Your collaborators &amp; your future self will inevitably have an easier time working with it down the road.</p>
+</blockquote>
+</section>
+<section id="documentation-pro-tip-1" class="level2">
+<h2>Documentation Pro-Tip 1</h2>
+<blockquote>
+<p>Add comments around functions that describe purpose, inputs and outputs.</p>
+</blockquote>
+</section>
+<section id="documentation-pro-tip-2" class="level2">
+<h2>Documentation Pro-Tip 2</h2>
+<blockquote>
+<p>Avoid proprietary formats: Use text files (.txt, .md) that don’t require special tools to open.</p>
+</blockquote>
+</section>
+<section id="documentation-pro-tip-3" class="level2">
+<h2>Documentation Pro-Tip 3</h2>
+<blockquote>
+<p>Markdown to style documentation = machine readable, small file size, low overhead.</p>
+</blockquote>
+</section>
+<section id="documentation-pro-tip-4" class="level2">
+<h2>Documentation Pro-Tip 4</h2>
+<p>Use coding approaches that connect data cleaning, analysis &amp; results</p>
+<blockquote>
+<p>R Markdown and Jupyter notebooks allow you to publish code and results in one (or more) output files.</p>
+</blockquote>
+</section>
+<section id="dissemination" class="level2">
+<h2>Dissemination</h2>
+<blockquote>
+<p>Publishing is not the end of your analysis, rather it is a way towards your future research and the future research of others.</p>
+</blockquote>
+</section>
+<section id="dissemination---why" class="level2">
+<h2>Dissemination - Why</h2>
+<ul>
+<li>Funding agency / journal requirement</li>
+<li>Community expects it</li>
+<li>Increased visibility / citation</li>
+<li>More efficient, less redundant science</li>
+</ul>
+</section>
+<section id="dissemination-workflow" class="level2">
+<h2>Dissemination workflow</h2>
+<p>Example Workflow / Tools:</p>
+<ul>
+<li><p>Document workflow: <strong>R Markdown / Jupyter Notebooks</strong></p></li>
+<li><p>Collaborate with Colleagues / Version Control : <strong>GitHub</strong></p></li>
+<li><p>Publish Data Snapshot: <strong>FigShare, Dryad, Zenodo, etc</strong></p></li>
+<li><p>Share workflow: <strong>Notebook Viewer, Binder</strong></p></li>
+</ul>
+</section>
+<section id="four-facets-of-reproducibility-1" class="level2">
+<h2>Four Facets of Reproducibility</h2>
+<p><em>An overview of some of the topics, tools and skills that we will cover during the Data Institute</em></p>
+<ol type="1">
+<li><p>Documentation: <strong>Jupyter notebooks, GitHub</strong></p></li>
+<li><p>Organization: <strong>File naming / directory structure best practices</strong></p></li>
+<li><p>Automation: <strong>Efficient Coding Practices (in Python)</strong></p></li>
+<li><p>Dissemination: <strong>GitHub</strong></p></li>
+</ol>
+</section>
+<section id="questions" class="level2">
+<h2>Questions?</h2>
+<p>Email: neondataskills@BattelleEcology.org</p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+		slideNumber: true,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

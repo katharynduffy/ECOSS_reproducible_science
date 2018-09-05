@@ -1,0 +1,22 @@
+language: c
+sudo: required
+before_script:
+- chmod +x ./bin/cibuild
+before_install:
+  - mkdir -p ~/.ssh
+  - openssl aes-256-cbc -K $encrypted_957066c6439f_key -iv $encrypted_957066c6439f_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  - sudo apt-get update
+  - sudo apt-get upgrade
+  - sudo apt-get install pandoc 
+
+# Assume bundler is being used, therefore
+# # the `install` step will run `bundle install` by default.
+script: ./bin/build
+branches:
+  only:
+  - gh-pages
+  - /pages-(.*)/
+  - /blog-(.*)/
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
