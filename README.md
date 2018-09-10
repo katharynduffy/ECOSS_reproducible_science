@@ -5,7 +5,7 @@ Adapted from the Reproducible Science Curriculum
 
 
 _Special Thanks: Naupaka Zimmerman,Francois Michonneau, Hilmar Lapp, Karen Cranston, Jenny Bryan,
-and everyone else who contributed to these materials._
+and everyone else who created these materials._
 
 
 
