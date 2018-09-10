@@ -312,7 +312,7 @@ Example Workflow / Tools:
 
 * Share workflow: **Binder**
 
-*Archive data
+* Archive data
 
 * Share link to DOIs
 
