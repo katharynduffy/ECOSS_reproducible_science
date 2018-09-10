@@ -135,7 +135,7 @@ Figure 1. Distribution of reporting errors per paper. Papers from which data wer
 ## Four Facets of Reproducibility
 
 
-_Over the next week, we will focus on the tools and skills associated with these facets._
+_Over 2-3 hours we will focus on the tools and skills associated with these facets._
 
 1. Organization
 2. Automation
@@ -207,18 +207,18 @@ File / Folder Names should be:
 * Machine readable names can be quickly and easily sorted and parsed
 
 
-## 2. Automation Pro-Tip
+## 2. Automation Tip
 
 Scripting vs. Point and click
 
 >  Script = more time spent up front, but will save time in the long run.
 
 
-## 2. Automation Pro-Tip
+## 2. Automation Tip
 Time Savings:
 
 * More efficient to modify and repeat an analysis down the road
-* Easier for reviewers and colleagues to see even aspect of your methods
+* Easier for reviewers and colleagues to see every aspect of your methods
 * Self documenting methods - your future self will forget small steps
 
 ## 2. Automation
@@ -260,18 +260,18 @@ Code should be easy to understand with clear goals
 > Document your code even if you think it's clear and simple. Your collaborators
 > & your future self will inevitably have an easier time working with it down the road.
 
-## Documentation Pro-Tip 1
+## Documentation Tip 1
 
 > Add comments around functions that describe purpose, inputs and outputs.
 
 
-## Documentation Pro-Tip 2
+## Documentation Tip 2
 >  Avoid proprietary formats: Use text files (.txt, .md) that don't require special tools to open.
 
-## Documentation Pro-Tip 3
+## Documentation Tip 3
 >  Markdown to style documentation = machine readable, small file size, low overhead.
 
-## Documentation Pro-Tip 4
+## Documentation Tip 4
 
 Use coding approaches that connect data cleaning, analysis & results
 
@@ -329,7 +329,7 @@ Example Workflow / Tools:
 
 2. Organization: **File naming / directory structure best practices**
 
-3. Automation: **Efficient Coding Practices (in Python)**
+3. Automation: **Efficient Coding Practices**
 
 4. Dissemination: **GitHub, Data Archives, DOIs**
 
